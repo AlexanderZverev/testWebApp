@@ -70,7 +70,7 @@
     let goToPageBtn = document.getElementById("go-to-page-btn");
     let pageInput = document.getElementById("page-input");
 
-    if(goToPageBtn != null){
+    if(goToPageBtn != null && pageInput != null){
 
         goToPageBtn.addEventListener("click", () => {
             let pageNumber = Number(pageInput.value);
@@ -86,9 +86,7 @@
                 pageInput.value = "";
             }
         });
-    }
 
-    if(pageInput != null){
         pageInput.addEventListener("keyup", (e) => {
             e.preventDefault();
 
